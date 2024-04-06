@@ -1,17 +1,12 @@
 package pres;
-
-
 import dao.IDao;
 import metier.IMetier;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Scanner;
-
 public class presentation2 {
-
     public static void main(String[] args) throws ClassNotFoundException, FileNotFoundException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
         /*
         instanciation dynamique
@@ -34,8 +29,5 @@ public class presentation2 {
         Method method=cMetier.getMethod("setDao",IDao.class);
         method.invoke(metier,dao);
         System.out.println("Resultat=>"+metier.calcul());
-
-
-
     }
 }
